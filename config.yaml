@@ -58,7 +58,3 @@ memory:
   provider: hindsight
 skills:
   disabled: []
-_left_core_scoped:
-  - homeassistant
-_left_core_installed:
-  - homeassistant

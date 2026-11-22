@@ -1,5 +1,5 @@
 name: voice
-version: 0.1.1
+version: 0.1.2
 description: "Home voice assistant. Short spoken answers, basic Home Assistant control, Hindsight memory recall and quick web search; hands bigger jobs to other profiles over a2a."
 hermes_requires: ">=0.23.0"
 author: "tewing"
@@ -31,8 +31,8 @@ env_requires:
     required: false
     default: ""
 
-# Plugins are not part of a distribution: the deployment installs and enables
-# them for this profile (config.yaml lists hindsight and homeassistant).
+# Plugins can't ship in a distribution: Hermes installs hindsight (memory.provider)
+# and homeassistant on the profile's first start while security.allow_lazy_installs is on.
 distribution_owned:
   - SOUL.md
   - config.yaml
