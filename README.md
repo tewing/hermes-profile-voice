@@ -1,6 +1,6 @@
 # hermes-profile-voice
 
-Sammi, the home voice assistant Hermes profile. Home Assistant's hermes_voice
+Home voice assistant Hermes profile. Home Assistant's hermes_voice
 integration calls it over the API server at `/p/voice/v1`. See
 `distribution.yaml` and `SOUL.md`.
 

@@ -1,6 +1,6 @@
 name: voice
-version: 0.1.0
-description: "Sammi — home voice assistant. Short spoken answers, basic Home Assistant control, Hindsight memory recall and quick web search; hands bigger jobs to other profiles over a2a."
+version: 0.1.1
+description: "Home voice assistant. Short spoken answers, basic Home Assistant control, Hindsight memory recall and quick web search; hands bigger jobs to other profiles over a2a."
 hermes_requires: ">=0.23.0"
 author: "tewing"
 license: "MIT"
