@@ -9,6 +9,7 @@ agent:
   reasoning_effort: low
 platform_toolsets:
   api_server:
+    - delegation
     - memory
     - todo
     - web
@@ -51,6 +52,7 @@ known_builtin_toolsets:
     - yuanbao
 plugins:
   enabled:
+    - advanced-delegation
     - hindsight
     - homeassistant
   disabled: []
@@ -58,3 +60,12 @@ memory:
   provider: hindsight
 skills:
   disabled: []
+delegation:
+  backend: profile_routes
+  backends:
+    profile_routes:
+      profiles:
+        - name: media
+          description: >-
+            Movies, TV and music: what to watch or play, recommendations, the Nuvio
+            library, watch history and addons. Returns plain text; say it in your own words.
