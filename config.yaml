@@ -9,7 +9,7 @@ agent:
   reasoning_effort: low
 platform_toolsets:
   api_server:
-    - delegation
+    - ask_profile
     - memory
     - todo
     - web
@@ -53,6 +53,7 @@ known_builtin_toolsets:
 plugins:
   enabled:
     - advanced-delegation
+    - ask-profile
     - hindsight
     - homeassistant
   disabled: []
@@ -61,11 +62,5 @@ memory:
 skills:
   disabled: []
 delegation:
-  backend: profile_routes
-  backends:
-    profile_routes:
-      profiles:
-        - name: media
-          description: >-
-            Movies, TV and music: what to watch or play, recommendations, the Nuvio
-            library, watch history and addons. Returns plain text; say it in your own words.
+  # Echo requests end with the reply, so a background delegation's answer is lost.
+  gateway_mode: inline
